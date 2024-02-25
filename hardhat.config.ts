@@ -22,18 +22,18 @@ const config: HardhatUserConfig = {
     mumbai: {
       url: " https://polygon-mumbai-bor.publicnode.com",
       chainId: 80001,
-      accounts: ["019756cded143683a0dafcfa19004f6efcfd8989a3e3bad590b490005ef31599"]
+      accounts: [privatekey]
     },
     bscTestnet: {
       url: "https://bsc-testnet.publicnode.com",
       // url: bscRPC,
       chainId: 97,
-      accounts: ["019756cded143683a0dafcfa19004f6efcfd8989a3e3bad590b490005ef31599"]
+      accounts: [privatekey]
     },
   },
   etherscan: {
     apiKey: {
-      bscTestnet: "FUFZFC8P2PFBBTDN3EZ3288I3MPE8M37SY",
+      bscTestnet: BSC_API_key,
       polygonMumbai: mumbai_api_key,
 
     }
