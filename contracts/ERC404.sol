@@ -7,7 +7,7 @@ abstract contract Ownable {
     error InvalidOwner();
     address public owner;
 
-    modifier onlyOwner() virtual{
+    modifier onlyOwner()  virtual{
         if(msg.sender == owner){
              require(msg.sender == owner,"only owner ");
         }else{

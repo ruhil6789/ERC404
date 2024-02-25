@@ -1,9 +1,10 @@
 // SDPX-License-Identifier:MIT;
 import "./ERC404.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
+import "@openzeppelin/contracts-upgradeable/access/OwnableUpgradeable.sol";
 pragma solidity 0.8.20;
 
-contract Pb is ERC404{
+contract Pb is ERC404 {
      string public dataUri;
      string public baseTokenUri;
 
@@ -36,7 +37,7 @@ function tokenURI(uint256 id) public view  returns(string memory){
             string memory color;
 
             if (seed <= 100) {
-                image = ".gif";
+                image = "1.gif";
                 color = "Yellow";
             } else if (seed <= 160) {
                 image = "2.gif";
